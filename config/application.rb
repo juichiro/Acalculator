@@ -10,6 +10,8 @@ module Acalculator
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    config.web_console.whitelisted_ips = '103.5.142.234'#cannot renderの解決策として追加してみた
+    
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

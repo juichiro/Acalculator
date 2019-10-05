@@ -1,6 +1,10 @@
-h1
-  | Calculators#new
-p
-  | Find me in app/views/calculators/new.html.erb
+h1　アルコールが抜ける時間の計算
 
-= form_with url:
+= form_with url: calculators_result_path, local: true do |f|
+  = f.label :ml, '飲んだ量（ml）'
+  = f.number_field :ml
+  = f.label :percent, '度数(%)'
+  = f.number_field :percent
+  = f.label :weight, '体重(kg)'
+  = f.number_field :weight
+  = f.submit '計算'
