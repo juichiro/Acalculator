@@ -1,0 +1,6 @@
+
+<!--document.querySelector("#box").style.display = 'none';-->
+
+var message = document.createElement('h2');
+message.innerText = "アルコールが分解されるまでの時間は、約<%= @result_hour %>時間 <%= @result_minitues %>分です";
+document.querySelector('p').insertAdjacentElement('afterend',message);

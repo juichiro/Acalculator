@@ -1,6 +1,6 @@
-h1.mt-5　アルコールが抜ける時間の計算
+h1.mt-5　アルコール分解時間計算機
 
-= form_with url: calculators_result_path, local: true do |f|
+= form_with url: calculators_result_path do |f|
   .form-group
   = f.label :ml, '飲酒量（ml）'
   = f.number_field :ml,class:'form-control'
@@ -12,3 +12,9 @@ h1.mt-5　アルコールが抜ける時間の計算
   = f.number_field :weight,class:'form-control'
   
   = f.submit '計算', class:'btn btn-primary mt-3'
+  
+
+.card.mt-5
+  .card-default 
+    p.text-center.text-secondary 計算結果
+
